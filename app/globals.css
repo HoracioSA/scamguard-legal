@@ -1,0 +1,144 @@
+:root {
+  --navy: #053048;
+  --terracotta: #e76d4d;
+  --text: #272a2b;
+  --text-secondary: #5b6b7c;
+  --border: #e4e7e9;
+  --background: #ebf2f2;
+  --surface: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background: var(--navy);
+  color: #fff;
+}
+
+.site-header .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.site-header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.site-header nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.legal-doc h1 {
+  color: var(--navy);
+  font-size: 1.75rem;
+  margin-top: 0;
+}
+
+.legal-doc h2 {
+  color: var(--navy);
+  font-size: 1.2rem;
+  margin-top: 2.25rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.legal-doc p,
+.legal-doc li {
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.legal-doc a {
+  color: var(--terracotta);
+}
+
+.legal-doc strong {
+  color: var(--navy);
+}
+
+.draft-notice {
+  background: #fff7ed;
+  border: 1px solid var(--terracotta);
+  color: #7a3b1f;
+  padding: 0.9rem 1.1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.home-intro h1 {
+  color: var(--navy);
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.home-links a {
+  display: block;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home-links a:hover {
+  border-color: var(--terracotta);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
