@@ -8,6 +8,7 @@ export default function HomePage() {
       <div className="home-links">
         <Link href="/terms">Terms and Conditions</Link>
         <Link href="/privacy">Privacy Policy</Link>
+        <Link href="/support">Support</Link>
       </div>
     </div>
   );
