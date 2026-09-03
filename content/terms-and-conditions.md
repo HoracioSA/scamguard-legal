@@ -2,18 +2,19 @@
   TEMPLATE — NOT LEGAL ADVICE.
   This draft was generated to match ScamGuard's actual behavior (AI analysis via a
   third-party provider, anonymous sessions, community-submitted reports about third
-  parties, on-device local storage). It is a starting point, not a finished legal
-  document. Have a qualified attorney in your target jurisdiction(s) review it before
-  publishing — especially the liability, indemnification, and governing-law sections,
-  and anything touching consumer-protection or data-protection law (GDPR, CCPA, etc.)
-  for the regions you operate in.
+  parties, on-device local storage, an auto-renewing subscription for AI features).
+  It is a starting point, not a finished legal document. Have a qualified attorney in
+  your target jurisdiction(s) review it before publishing — especially the liability,
+  indemnification, and governing-law sections, and anything touching
+  consumer-protection or data-protection law (GDPR, CCPA, etc.) for the regions you
+  operate in.
 
   Every [BRACKETED PLACEHOLDER] below needs a real value filled in.
 -->
 
 # Terms and Conditions
 
-**Last updated: August 31, 2026**
+**Last updated: September 2, 2026**
 
 These Terms and Conditions ("Terms") govern your access to and use of the ScamGuard
 mobile application (the "App"), operated by ScamGuard ("we," "us," or "our").
@@ -34,11 +35,13 @@ addresses, or handles). The App provides:
 
 - **AI-assisted analysis** of content you submit (pasted text, shared text, or text
   extracted via OCR from a screenshot), returning a risk assessment (Safe /
-  Suspicious / Likely Scam), supporting reasoning, and safety guidance.
+  Suspicious / Likely Scam), supporting reasoning, and safety guidance. **This
+  feature requires an active ScamGuard Pro subscription — see Section 4.**
 - **Community reports**: a directory of senders reported by other users, and the
-  ability to submit your own reports.
+  ability to submit your own reports. This is free and does not require a
+  subscription.
 - **A personal, on-device history** of the reports you've submitted, and a personal
-  blocklist — both stored only on your device.
+  blocklist — both stored only on your device, free of charge.
 
 ## 2. Not a Substitute for Professional Judgment — No Guarantee
 
@@ -70,22 +73,56 @@ that any message, call, sender, or website is or is not a scam.**
 You must be at least 13 years old to use the App. By using the
 App, you represent that you meet this requirement.
 
-## 4. Anonymous Use; No Account Required
+## 4. ScamGuard Pro Subscription
+
+Community reports, browsing and searching the community directory, submitting your
+own reports, and your personal on-device report history and blocklist are free to
+use and do not require a subscription.
+
+**AI-assisted analysis of content you submit — including text you paste or share,
+and text extracted via OCR from a screenshot — requires an active "ScamGuard Pro"
+subscription.** Without an active subscription, these specific features are
+unavailable; the rest of the App continues to work as described in Section 1.
+
+- **Subscription and billing.** ScamGuard Pro is an auto-renewing subscription
+  offered at the price displayed in the App and on the App Store at the time of
+  purchase, billed for the subscription period shown at checkout (e.g., monthly).
+  Payment is charged to your Apple ID account upon confirming your purchase.
+- **Auto-renewal.** Your subscription automatically renews for the same period
+  unless you turn off auto-renewal at least 24 hours before the end of the current
+  period. Your account will be charged for renewal within 24 hours prior to the end
+  of the current period, at the then-current price for the subscription.
+- **Managing or canceling.** You can manage or cancel your subscription, and turn
+  off auto-renewal, at any time in your device's Settings app under your Apple ID →
+  Subscriptions. Uninstalling the App does not cancel your subscription.
+- **Free trial (where offered).** If the App Store displays a free trial or
+  introductory offer for ScamGuard Pro, any unused portion of that trial period is
+  forfeited when you purchase a ScamGuard Pro subscription, where applicable.
+  Eligibility for a free trial or introductory offer is determined by Apple.
+- **Refunds.** All purchases are processed by Apple through the App Store. We do
+  not process payments or issue refunds directly — refund requests are handled by
+  Apple in accordance with Apple's own policies, generally through
+  [reportaproblem.apple.com](https://reportaproblem.apple.com).
+- **Changes to pricing or features.** We may change what's included in ScamGuard
+  Pro, or its price, for future billing periods, consistent with Apple's
+  requirements for notifying subscribers of price changes.
+
+## 5. Anonymous Use; No Account Required
 
 ScamGuard does not require you to register or provide any real-world identity to use
 the App. On first use, the App creates an anonymous session — a randomly generated
-identifier with no personal information attached — used solely to apply rate limits
-and to prevent the same user from artificially inflating a single sender's report
-count. This identifier is not linked to your name, email, or any other real-world
-identity that we collect.
+identifier with no personal information attached — used solely to apply rate limits,
+to determine your ScamGuard Pro subscription status, and to prevent the same user
+from artificially inflating a single sender's report count. This identifier is not
+linked to your name, email, or any other real-world identity that we collect.
 
-## 5. Content You Submit for Analysis
+## 6. Content You Submit for Analysis
 
 When you submit text, a call summary, or a screenshot for analysis:
 
 - You grant us the rights necessary to process that content for the purpose of
   generating an analysis, including transmitting it to our third-party AI provider
-  (see Section 7).
+  (see Section 8).
 - **Do not submit content that isn't yours to share**, that contains other people's
   sensitive personal information beyond what's necessary to describe the suspected
   scam, or that is unlawful in your jurisdiction.
@@ -94,7 +131,7 @@ When you submit text, a call summary, or a screenshot for analysis:
   from scratch — this reduces cost and improves response time. Cached results are
   not linked to your identity.
 
-## 6. Community Reports
+## 7. Community Reports
 
 When you submit a report about a sender:
 
@@ -110,7 +147,7 @@ When you submit a report about a sender:
 - Because reports are anonymous, we generally cannot identify who submitted a given
   report, including in response to a request from the reported party.
 
-## 7. Third-Party AI Processing
+## 8. Third-Party AI Processing
 
 Content you submit for analysis (including OCR-extracted screenshot text) is sent to
 a third-party AI provider (OpenAI) for processing. That
@@ -118,21 +155,21 @@ provider's own terms and privacy practices govern how they handle data submitted
 through their API. Do not submit content that you would not want processed by a
 third-party service.
 
-## 8. Local Data Storage
+## 9. Local Data Storage
 
 Your personal report history ("My Reports") and your personal sender blocklist are
 stored only on your device's local storage. We do not have server-side access to
 this data, it is not backed up by us, and it will be lost if you uninstall the App
 or clear its data. It is not synced across devices.
 
-## 9. Prohibited Conduct
+## 10. Prohibited Conduct
 
 You agree not to:
 
 - Use the App to harass, defame, threaten, or knowingly submit false reports about
   any person or business.
-- Attempt to circumvent rate limits, session mechanisms, or other technical
-  safeguards.
+- Attempt to circumvent rate limits, session mechanisms, subscription checks, or
+  other technical safeguards.
 - Submit content designed to manipulate, exploit, or attack the App's AI systems
   (e.g. prompt injection) or backend infrastructure.
 - Use the App for any unlawful purpose, or in a way that infringes the rights of
@@ -140,14 +177,14 @@ You agree not to:
 - Reverse-engineer, decompile, or attempt to extract the App's source code except as
   permitted by applicable law.
 
-## 10. Intellectual Property
+## 11. Intellectual Property
 
 The App, including its design, branding, and underlying software (excluding
 user-submitted content and third-party components), is owned by ScamGuard
 or its licensors and is protected by applicable intellectual property laws. These
 Terms do not grant you any rights to our trademarks or branding.
 
-## 11. Disclaimer of Warranties
+## 12. Disclaimer of Warranties
 
 THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND,
 WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION WARRANTIES OF
@@ -155,7 +192,7 @@ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR ACCURACY
 DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR THAT ANY ANALYSIS
 OR COMMUNITY REPORT WILL BE ACCURATE OR COMPLETE.
 
-## 12. Limitation of Liability
+## 13. Limitation of Liability
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, SCAMGUARD AND ANY
 CONTRACTORS OR AGENTS ACTING ON ITS BEHALF SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
@@ -167,33 +204,34 @@ do not allow the exclusion or limitation of certain damages — these limitation
 not fully apply to you; consult local counsel to align this section with applicable
 consumer-protection law.]
 
-## 13. Indemnification
+## 14. Indemnification
 
 You agree to indemnify and hold harmless ScamGuard from any claims,
 damages, or expenses (including reasonable legal fees) arising from your violation
 of these Terms or your misuse of the App, including any community report you submit.
 
-## 14. Termination
+## 15. Termination
 
 We may suspend or terminate your access to the App at any time, with or without
 notice, for conduct that violates these Terms or that we believe is harmful to other
 users, third parties, or the App itself. Since the App does not use accounts,
 "termination" may take the form of blocking your anonymous session or device from
-further use.
+further use. Termination does not entitle you to a refund of any subscription
+payment already made; see Section 4 regarding refunds.
 
-## 15. Changes to the App and These Terms
+## 16. Changes to the App and These Terms
 
 We may modify or discontinue the App, or any part of it, at any time. We may update
 these Terms from time to time; the "Last updated" date above will reflect the most
 recent revision. Continued use of the App after changes take effect constitutes
 acceptance of the revised Terms.
 
-## 16. Severability
+## 17. Severability
 
 If any provision of these Terms is found unenforceable, the remaining provisions
 will remain in full effect, and the unenforceable provision will be modified to the
 minimum extent necessary to make it enforceable.
 
-## 17. Contact
+## 18. Contact
 
 Questions about these Terms can be sent to contact@horaciosapato.com.
