@@ -1,10 +1,11 @@
 import type { NextConfig } from 'next';
 import { BASE_PATH } from './lib/basePath';
 
-// Served from https://<user>.github.io/scamguard-legal/ — a project Pages
-// site, not a user/org root site — so every asset and route needs this
-// subpath prefix baked in at build time. GitHub Pages also has no image
-// optimization server, so next/image must skip it entirely.
+// Served from https://legal.scamgards.com (a GitHub Pages custom domain,
+// see public/CNAME) — no basePath needed since it's the domain root, unlike
+// the old horaciosa.github.io/scamguard-legal/ project-pages URL. GitHub
+// Pages has no image optimization server, so next/image must skip it
+// entirely regardless.
 const nextConfig: NextConfig = {
   output: 'export',
   basePath: BASE_PATH,
