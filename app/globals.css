@@ -34,7 +34,6 @@ body {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1.25rem 1.5rem;
   background: var(--navy);
   color: #fff;
@@ -48,19 +47,6 @@ body {
   font-weight: 700;
   text-decoration: none;
   font-size: 1.1rem;
-}
-
-.site-header nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  opacity: 0.85;
-  font-size: 0.95rem;
-}
-
-.site-header nav a:hover {
-  opacity: 1;
-  text-decoration: underline;
 }
 
 .content {
@@ -110,30 +96,79 @@ body {
   line-height: 1.5;
 }
 
-.home-intro h1 {
-  color: var(--navy);
-}
-
-.home-links {
+.landing {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
+  gap: 3rem;
 }
 
-.home-links a {
-  display: block;
-  padding: 1rem 1.25rem;
+.hero {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.hero h1 {
+  color: var(--navy);
+  font-size: 2rem;
+  line-height: 1.25;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.hero-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 560px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  color: var(--navy);
-  text-decoration: none;
-  font-weight: 600;
+  border-radius: 12px;
+  padding: 1.5rem;
 }
 
-.home-links a:hover {
-  border-color: var(--terracotta);
+.feature-card h2 {
+  color: var(--navy);
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.pro-note {
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+
+.pro-note p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.pro-note strong {
+  color: var(--navy);
 }
 
 .site-footer {
@@ -141,4 +176,22 @@ body {
   padding: 1.5rem;
   color: var(--text-secondary);
   font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: var(--terracotta);
+  text-decoration: underline;
 }
