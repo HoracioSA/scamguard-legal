@@ -72,11 +72,38 @@ export default function HomePage() {
         ))}
       </section>
 
-      <section className="pro-note">
-        <p>
-          AI-powered analysis and screenshot scanning are part of <strong>ScamGuard Pro</strong>.
-          Community reports, search, and your report history are always free.
-        </p>
+      <section className="pricing">
+        <h2 className="pricing-title">Simple, fair pricing</h2>
+        <p className="pricing-subtitle">Start free. Upgrade only if you want AI on your side.</p>
+
+        <div className="pricing-cards">
+          <div className="pricing-card">
+            <h3>Free</h3>
+            <p className="pricing-price">
+              $0<span>/month</span>
+            </p>
+            <ul>
+              <li>Browse &amp; search the community scam directory</li>
+              <li>Submit reports anonymously</li>
+              <li>Personal report history &amp; blocklist</li>
+              <li>No sign-up, ever</li>
+            </ul>
+          </div>
+
+          <div className="pricing-card pricing-card-featured">
+            <span className="pricing-badge">Recommended</span>
+            <h3>ScamGuard Pro</h3>
+            <p className="pricing-price">
+              $4.99<span>/month</span>
+            </p>
+            <ul>
+              <li>Everything in Free</li>
+              <li>AI-powered scam analysis for any message</li>
+              <li>Screenshot scanning with OCR</li>
+              <li>Detailed reasoning &amp; safety guidance for every verdict</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
   );
