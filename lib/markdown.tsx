@@ -29,9 +29,14 @@ function stripHtmlComments(markdown: string): string {
   return markdown.replace(/<!--[\s\S]*?-->/g, '').trimStart();
 }
 
+/** The leading "# Title" line is dropped since the page's PageHero banner shows the title instead — keeps them from appearing twice. */
+function stripLeadingTitle(markdown: string): string {
+  return markdown.replace(/^#\s+.+\n+/, '');
+}
+
 export function MarkdownDocument({ filename }: { filename: string }) {
   const filePath = path.join(process.cwd(), 'content', filename);
-  const content = stripHtmlComments(fs.readFileSync(filePath, 'utf8'));
+  const content = stripLeadingTitle(stripHtmlComments(fs.readFileSync(filePath, 'utf8')));
 
   return (
     <div className="legal-doc">
