@@ -16,6 +16,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -104,10 +105,14 @@ body {
 
 .hero {
   position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
   overflow: hidden;
   text-align: center;
   padding: 3.5rem 1.5rem;
-  border-radius: 24px;
   background: linear-gradient(160deg, #0a4463 0%, var(--navy) 55%, #032230 100%);
 }
 
@@ -171,6 +176,8 @@ body {
 .hero-content {
   position: relative;
   z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .hero h1 {
