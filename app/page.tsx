@@ -1,5 +1,20 @@
 import Image from 'next/image';
 import logoMark from '../public/logo-mark.png';
+import welcomeShot from '../public/screenshots/welcome.jpg';
+import communityShot from '../public/screenshots/community.jpg';
+import analysisShot from '../public/screenshots/analysis.jpg';
+import searchShot from '../public/screenshots/search.jpg';
+import detailShot from '../public/screenshots/detail.jpg';
+import reportsShot from '../public/screenshots/reports.jpg';
+
+const SCREENSHOTS = [
+  { src: welcomeShot, alt: 'ScamGuard welcome screen' },
+  { src: communityShot, alt: 'Community screen showing reported senders' },
+  { src: analysisShot, alt: 'Analyze screen checking a message with AI' },
+  { src: searchShot, alt: 'Search screen for checking a sender' },
+  { src: detailShot, alt: 'Report detail screen for a sender' },
+  { src: reportsShot, alt: 'My Reports screen' },
+];
 
 const FEATURES = [
   {
@@ -38,6 +53,14 @@ export default function HomePage() {
             community-reported scammers, no account needed.
           </p>
         </div>
+      </section>
+
+      <section className="gallery">
+        {SCREENSHOTS.map((shot) => (
+          <div key={shot.alt} className="gallery-item">
+            <Image src={shot.src} alt={shot.alt} />
+          </div>
+        ))}
       </section>
 
       <section className="features">

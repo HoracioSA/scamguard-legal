@@ -188,6 +188,31 @@ body {
   margin: 0 auto;
 }
 
+.gallery {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0.25rem 0 1rem;
+  margin: 0 -1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  width: 190px;
+  scroll-snap-align: start;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(5, 48, 72, 0.22);
+}
+
 .features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
