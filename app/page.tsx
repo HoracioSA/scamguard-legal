@@ -52,10 +52,21 @@ export default function HomePage() {
             Check any suspicious message, call, or screenshot with AI — free to browse
             community-reported scammers, no account needed.
           </p>
+          <div className="hero-actions">
+            <a
+              className="hero-button hero-button-primary"
+              href="https://testflight.apple.com/join/euhvz3Eu"
+            >
+              Download on the App Store
+            </a>
+            <a className="hero-button hero-button-secondary" href="#gallery">
+              See how it works
+            </a>
+          </div>
         </div>
       </section>
 
-      <section className="gallery">
+      <section id="gallery" className="gallery">
         {SCREENSHOTS.map((shot) => (
           <div key={shot.alt} className="gallery-item">
             <Image src={shot.src} alt={shot.alt} />
@@ -72,36 +83,41 @@ export default function HomePage() {
         ))}
       </section>
 
-      <section className="pricing">
-        <h2 className="pricing-title">Simple, fair pricing</h2>
-        <p className="pricing-subtitle">Start free. Upgrade only if you want AI on your side.</p>
+      <section className="hero pricing">
+        <div className="hero-blob hero-blob-1" />
+        <div className="hero-blob hero-blob-2" />
+        <div className="hero-blob hero-blob-3" />
+        <div className="hero-content">
+          <h2 className="pricing-title">Simple, fair pricing</h2>
+          <p className="hero-subtitle">Start free. Upgrade only if you want AI on your side.</p>
 
-        <div className="pricing-cards">
-          <div className="pricing-card">
-            <h3>Free</h3>
-            <p className="pricing-price">
-              $0<span>/month</span>
-            </p>
-            <ul>
-              <li>Browse &amp; search the community scam directory</li>
-              <li>Submit reports anonymously</li>
-              <li>Personal report history &amp; blocklist</li>
-              <li>No sign-up, ever</li>
-            </ul>
-          </div>
+          <div className="pricing-cards">
+            <div className="pricing-card">
+              <h3>Free</h3>
+              <p className="pricing-price">
+                $0<span>/month</span>
+              </p>
+              <ul>
+                <li>Browse &amp; search the community scam directory</li>
+                <li>Submit reports anonymously</li>
+                <li>Personal report history &amp; blocklist</li>
+                <li>No sign-up, ever</li>
+              </ul>
+            </div>
 
-          <div className="pricing-card pricing-card-featured">
-            <span className="pricing-badge">Recommended</span>
-            <h3>ScamGuard Pro</h3>
-            <p className="pricing-price">
-              $4.99<span>/month</span>
-            </p>
-            <ul>
-              <li>Everything in Free</li>
-              <li>AI-powered scam analysis for any message</li>
-              <li>Screenshot scanning with OCR</li>
-              <li>Detailed reasoning &amp; safety guidance for every verdict</li>
-            </ul>
+            <div className="pricing-card pricing-card-featured">
+              <span className="pricing-badge">Recommended</span>
+              <h3>ScamGuard Pro</h3>
+              <p className="pricing-price">
+                $4.99<span>/month</span>
+              </p>
+              <ul>
+                <li>Everything in Free</li>
+                <li>AI-powered scam analysis for any message</li>
+                <li>Screenshot scanning with OCR</li>
+                <li>Detailed reasoning &amp; safety guidance for every verdict</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
