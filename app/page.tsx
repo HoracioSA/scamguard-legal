@@ -27,12 +27,17 @@ export default function HomePage() {
   return (
     <div className="landing">
       <section className="hero">
-        <Image src={logoMark} alt="" width={56} height={72} priority />
-        <h1>Know if it&apos;s a scam before you respond</h1>
-        <p className="hero-subtitle">
-          Check any suspicious message, call, or screenshot with AI — free to browse
-          community-reported scammers, no account needed.
-        </p>
+        <div className="hero-blob hero-blob-1" />
+        <div className="hero-blob hero-blob-2" />
+        <div className="hero-blob hero-blob-3" />
+        <div className="hero-content">
+          <Image src={logoMark} alt="" width={56} height={72} priority />
+          <h1>Know if it&apos;s a scam before you respond</h1>
+          <p className="hero-subtitle">
+            Check any suspicious message, call, or screenshot with AI — free to browse
+            community-reported scammers, no account needed.
+          </p>
+        </div>
       </section>
 
       <section className="features">
